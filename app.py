@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from sqlalchemy import desc
 
 # set-up app
 app = Flask(__name__)
@@ -51,7 +52,7 @@ def index():
 
     else:   # request.method == "GET"
 
-        tasks = ToDo.query.order_by(ToDo.date_created).all() # all tasks ordered by creation date
+        tasks = ToDo.query.order_by(ToDo.date_created.desc()).all() # all tasks ordered by creation date
 
         return render_template("index.html", tasks=tasks)
 
