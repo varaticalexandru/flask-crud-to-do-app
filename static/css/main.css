@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    /* border-collapse: collapse; */
+    margin: 0 auto;
+    
+}
+
+th, td {
+        border: 1px solid #999;
+        padding: 1rem;
+        text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background: lightblue;
+}
+
+.form {
+   margin-top: 20px; 
+}
+
+#content {
+    width: 70%;
+}
